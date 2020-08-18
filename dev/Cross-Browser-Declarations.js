@@ -67,8 +67,9 @@ if (typeof AudioContext === 'undefined') {
     }
 }
 
-/*jshint -W079 */
-var URL = window.URL;
+// Commented out to fix global URL pollution
+// /*jshint -W079 */
+// var URL = window.URL;
 
 if (typeof URL === 'undefined' && typeof webkitURL !== 'undefined') {
     /*global URL:true */

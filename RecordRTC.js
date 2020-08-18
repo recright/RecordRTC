@@ -1,6 +1,6 @@
 'use strict';
 
-// Last time updated: 2020-07-30 11:26:25 AM UTC
+// Last time updated: 2020-08-18 10:12:11 AM UTC
 
 // ________________
 // RecordRTC v5.6.1
@@ -1729,8 +1729,9 @@ if (typeof AudioContext === 'undefined') {
     }
 }
 
-/*jshint -W079 */
-var URL = window.URL;
+// Commented out to fix global URL pollution
+// /*jshint -W079 */
+// var URL = window.URL;
 
 if (typeof URL === 'undefined' && typeof webkitURL !== 'undefined') {
     /*global URL:true */
